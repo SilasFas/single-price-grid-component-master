@@ -36,8 +36,8 @@ main {
 }
 
 section {
-    width: 360px;
-    height: 250px;
+    width: 300px;
+    height: 180px;
     padding-bottom: 6px;
 }
 
@@ -50,14 +50,17 @@ section {
 h1 {
     color: var(--color-primary);
     margin: 15px;
-    padding: 5px;
+    margin-bottom: 1px;
+    padding: 3px;
     font-weight: 700;
 }
 
 #p1 {
     color: var(--color-secondary);
     margin: 15px;
-    padding: 5px;
+    margin-bottom: 1px;
+    margin-top: 1px;
+    padding: 3px;
     font-size: 16px;
     font-weight: 700;
 }
@@ -65,9 +68,11 @@ h1 {
 #p2 {
     color: var(--color-tertiary);
     margin: 15px;
-    padding: 5px;
-    line-height: 25px;
-    font-size: 16px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding: 3px;
+    line-height: 18px;
+    font-size: 13px;
 }
 
 #secondSection {
@@ -85,8 +90,8 @@ h2 {
 
 #p3 {
     color: var(--color-text);
-    margin: 5px 15px 20px;
-    padding: 5px;
+    margin: 5px 15px 10px;
+    padding: 3px;
 }
 
 span {
@@ -98,14 +103,14 @@ span {
 
 #p4 {
     color: var(--color-heading);
-    margin: 10px 15px 25px;
-    padding: 5px;
+    margin: 10px 15px 10px;
+    padding: 3px;
 }
 
 button {
     margin: 0 15px;
     width: 90%;
-    height: 50px;
+    height: 42px;
     background-color: var(--color-secondary);
     color: var(--color-heading);
     border: none;
@@ -127,8 +132,11 @@ button:hover {
 
 ul {
     color: var(--color-text);
-    line-height: 22px;
+    line-height: 18px;
     list-style: none;
     margin: 15px;
-    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 3px;
+    font-size: 13px;
 }
