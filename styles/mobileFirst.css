@@ -2,17 +2,28 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
 
+:root {
+    --color-primary: hsl(179, 62%, 43%);
+    --color-secondary: hsl(71, 73%, 54%);
+    --color-tertiary: hsl(218, 22%, 67%);
+    --color-background: hsl(204, 43%, 93%);
+    --color-accent: hsl(71, 78%, 56%);
+    --color-text: rgba(255, 255, 255, 0.678);
+    --color-heading: white;
+    --shadow: 5px 5px 8px rgba(0, 0, 0, 0.116);
+    --border-radius: 5px;
+}
+
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    background-color: hsl(204, 43%, 93%);
+    background-color: var(--color-background);
     font-family: 'Karla', sans-serif;
     width: 100vw;
     height: 100vh;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -20,13 +31,11 @@ body {
 }
 
 main {
-    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.116);
-    border-radius: 5px 5px 5px 5px;
+    box-shadow: var(--shadow);
+    border-radius: var(--border-radius);
 }
 
-#firstSection,
-#secondSection,
-#thirdSection {
+section {
     width: 360px;
     height: 250px;
     padding-bottom: 6px;
@@ -35,18 +44,18 @@ main {
 #firstSection {
     padding-top: 1px;
     background-color: white;
-    border-radius: 5px 5px 0px 0px;
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
 }
 
 h1 {
-    color: hsl(179, 62%, 43%);
+    color: var(--color-primary);
     margin: 15px;
     padding: 5px;
     font-weight: 700;
 }
 
 #p1 {
-    color: hsl(71, 73%, 54%);
+    color: var(--color-secondary);
     margin: 15px;
     padding: 5px;
     font-size: 16px;
@@ -54,85 +63,72 @@ h1 {
 }
 
 #p2 {
-    color: hsl(218, 22%, 67%);
+    color: var(--color-tertiary);
     margin: 15px;
     padding: 5px;
     line-height: 25px;
     font-size: 16px;
 }
 
-
 #secondSection {
-    background-color: hsl(179, 62%, 43%);
+    background-color: var(--color-primary);
     padding-top: 20px;
 }
 
 h2 {
-    color: white;
-    margin-top: 0px;
-    margin-left: 15px;
-    margin-right: 15px;
-    margin-bottom: 0px;
+    color: var(--color-heading);
+    margin: 0 15px;
     padding: 5px;
     font-size: 20px;
     font-weight: 700;
 }
 
 #p3 {
-    color: rgba(255, 255, 255, 0.568);
-    margin-top: 5px;
-    margin-left: 15px;
-    margin-right: 15px;
-    margin-bottom: 20px;
+    color: var(--color-text);
+    margin: 5px 15px 20px;
     padding: 5px;
 }
 
 span {
-    color: white;
+    color: var(--color-heading);
     font-size: 30px;
     font-weight: 700;
     margin-right: 8px;
 }
 
 #p4 {
-    color: white;
-    margin-top: 10px;
-    margin-left: 15px;
-    margin-right: 15px;
-    margin-bottom: 25px;
+    color: var(--color-heading);
+    margin: 10px 15px 25px;
     padding: 5px;
 }
 
 button {
-    margin-left: 15px;
-    margin-right: 15px;
+    margin: 0 15px;
     width: 90%;
     height: 50px;
-    background-color: hsl(71, 73%, 54%);
-    color: white;
+    background-color: var(--color-secondary);
+    color: var(--color-heading);
     border: none;
     border-radius: 8px;
     font-size: 16px;
-    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.116);
+    box-shadow: var(--shadow);
 }
 
 button:hover {
     cursor: pointer;
-    background-color: hsl(71, 78%, 56%);
+    background-color: var(--color-accent);
 }
 
 #thirdSection {
     background-color: hsl(179, 61%, 48%);
     padding-top: 20px;
-    border-radius: 0px 0px 5px 5px;
+    border-radius: 0 0 var(--border-radius) var(--border-radius);
 }
 
 ul {
-    color: rgba(255, 255, 255, 0.678);
+    color: var(--color-text);
     line-height: 22px;
     list-style: none;
-    margin-top: 15px;
-    margin-left: 15px;
-    margin-right: 15px;
+    margin: 15px;
     padding: 5px;
 }
