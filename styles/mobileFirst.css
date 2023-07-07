@@ -10,7 +10,6 @@
 body {
     background-color: hsl(204, 43%, 93%);
     font-family: 'Karla', sans-serif;
-
     width: 100vw;
     height: 100vh;
 
@@ -20,7 +19,10 @@ body {
     align-items: center;
 }
 
-/* main {} */
+main {
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.116);
+    border-radius: 5px 5px 5px 5px;
+}
 
 #firstSection,
 #secondSection,
@@ -31,7 +33,9 @@ body {
 }
 
 #firstSection {
+    padding-top: 1px;
     background-color: white;
+    border-radius: 5px 5px 0px 0px;
 }
 
 h1 {
@@ -39,7 +43,6 @@ h1 {
     margin: 15px;
     padding: 5px;
     font-weight: 700;
-
 }
 
 #p1 {
@@ -61,6 +64,7 @@ h1 {
 
 #secondSection {
     background-color: hsl(179, 62%, 43%);
+    padding-top: 20px;
 }
 
 h2 {
@@ -99,7 +103,6 @@ span {
     padding: 5px;
 }
 
-
 button {
     margin-left: 15px;
     margin-right: 15px;
@@ -110,7 +113,7 @@ button {
     border: none;
     border-radius: 8px;
     font-size: 16px;
-    box-shadow: 2px 2px 2px 0px hsl(71, 73%, 54%);
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.116);
 }
 
 button:hover {
@@ -120,4 +123,16 @@ button:hover {
 
 #thirdSection {
     background-color: hsl(179, 61%, 48%);
+    padding-top: 20px;
+    border-radius: 0px 0px 5px 5px;
+}
+
+ul {
+    color: rgba(255, 255, 255, 0.678);
+    line-height: 22px;
+    list-style: none;
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 5px;
 }
