@@ -34,7 +34,7 @@ A very interesting technique that I could use on this project was CSS variables,
 
 ### Continued development
 
-Although I could apply Media Query CSS variable technique on this project, I still need to enhance these two techniques.
+Although I could apply Media Query CSS and variable technique on this project, I still need to enhance these two techniques.
 
 ### Useful resources
 
